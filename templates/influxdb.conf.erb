@@ -126,3 +126,8 @@ hostname = "<%= @hostname -%>"
   max-age = "<%= @hinted_handoff_max_age -%>"
   retry-rate-limit = <%= @hinted_handoff_retry_rate_limit %>
   retry-interval = "<%= @hinted_handoff_retry_interval -%>"
+
+<% if @snapshot_enabled -%>
+[snapshot]
+  enabled = <%= @snapshot_enabled %>
+<% end -%>

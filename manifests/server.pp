@@ -8,6 +8,7 @@ class influxdb::server (
   $hostname                                     = undef,
   $bind_address                                 = $influxdb::params::bind_address,
   $reporting_disabled                           = $influxdb::params::reporting_disabled,
+  $snapshot_enabled                             = $influxdb::params::snapshot_enabled,
   $retention_autocreate                         = $influxdb::params::retention_autocreate,
   $election_timeout                             = $influxdb::params::election_timeout,
   $heartbeat_timeout                            = $influxdb::params::heartbeat_timeout,

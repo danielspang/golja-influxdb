@@ -400,6 +400,10 @@ Default: 0
 
 Default: 1s
 
+#####`snapshot_enabled`
+
+Enable snapshots. Default: false
+
 #####`conf_template`
 
 If needed you can add a custom template. Default: influxdb/influxdb.conf.erb

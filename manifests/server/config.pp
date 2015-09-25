@@ -65,6 +65,7 @@ class influxdb::server::config {
   $hinted_handoff_retry_rate_limit              = $influxdb::server::hinted_handoff_retry_rate_limit
   $hinted_handoff_retry_interval                = $influxdb::server::hinted_handoff_retry_interval
   $reporting_disabled                           = $influxdb::server::reporting_disabled
+  $snapshot_enabled                             = $influxdb::server::snapshot_enabled
 
   file { $config_file:
     ensure  => $ensure,

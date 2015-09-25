@@ -70,6 +70,7 @@ class influxdb::params {
   $hinted_handoff_retry_rate_limit              = 0
   $hinted_handoff_retry_interval                = '1s'
   $reporting_disabled                           = false
+  $snapshot_enabled                             = false
   $conf_template                                = 'influxdb/influxdb.conf.erb'
   $config_file                                  = '/etc/opt/influxdb/influxdb.conf'
 
